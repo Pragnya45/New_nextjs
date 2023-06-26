@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
-import { signup } from "./auth";
 import Header from "../components/Header";
+import { signup } from "./auth";
+
 
 const Signup = () => {
   const [values, setValues] = useState({
