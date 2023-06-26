@@ -1,5 +1,5 @@
 export const signup = user => {
-    return fetch("http://localhost:8000/api/signup",{
+    return fetch("https://nextjs-project1-backend.onrender.com/api/signup",{
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -14,7 +14,7 @@ export const signup = user => {
   };
   
   export const signin = user => {
-    return fetch("http://localhost:8000/api/signin", {
+    return fetch("https://nextjs-project1-backend.onrender.com/api/signin", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -40,7 +40,7 @@ export const signup = user => {
       localStorage.removeItem("jwt");
       next();
   
-      return fetch("http://localhost:8000/api/signout", {
+      return fetch("https://nextjs-project1-backend.onrender.com/api/signout", {
         method: "GET"
       })
         .then(response => console.log("signout success"))
